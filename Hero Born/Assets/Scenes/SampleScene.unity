@@ -810,7 +810,7 @@ Transform:
   m_GameObject: {fileID: 963194225}
   serializedVersion: 2
   m_LocalRotation: {x: 0.13960668, y: 0.80153096, z: -0.44332218, w: 0.3761963}
-  m_LocalPosition: {x: -13.45, y: 4.48, z: 13.38}
+  m_LocalPosition: {x: -0.4, y: 11.51, z: 4}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -992,6 +992,7 @@ GameObject:
   - component: {fileID: 1409292249}
   - component: {fileID: 1409292248}
   - component: {fileID: 1409292247}
+  - component: {fileID: 1409292252}
   m_Layer: 0
   m_Name: Player
   m_TagString: Untagged
@@ -1114,6 +1115,20 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1409292252
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1409292246}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e551ef5264256204ab0f2230d178bd7f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  MoveSpeed: 10
+  RotateSpeed: 75
 --- !u!4 &1424982278 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 6912623309003075169, guid: 0f571305680f93c42b5590a13d671365, type: 3}
@@ -1744,7 +1759,8 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 7582871844977087438, guid: 0f571305680f93c42b5590a13d671365, type: 3}
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
     m_AddedComponents: []
@@ -2009,7 +2025,12 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    - target: {fileID: 7582871844977087438, guid: 0f571305680f93c42b5590a13d671365, type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents:
+    - {fileID: 7582871844977087438, guid: 0f571305680f93c42b5590a13d671365, type: 3}
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
     m_AddedComponents: []
