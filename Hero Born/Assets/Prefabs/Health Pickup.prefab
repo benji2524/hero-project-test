@@ -14,7 +14,7 @@ GameObject:
   - component: {fileID: 1032177405858579076}
   - component: {fileID: 7582871844977087438}
   - component: {fileID: 5893443441749733095}
-  - component: {fileID: 5081857452929568375}
+  - component: {fileID: 282032601675742902}
   m_Layer: 0
   m_Name: Health Pickup
   m_TagString: Untagged
@@ -144,7 +144,7 @@ Animator:
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorStateOnDisable: 0
   m_WriteDefaultValuesOnDisable: 0
---- !u!114 &5081857452929568375
+--- !u!114 &282032601675742902
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -153,6 +153,6 @@ MonoBehaviour:
   m_GameObject: {fileID: 4581825768602105119}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: b80048b4898358a4db062cce8e86c1da, type: 3}
+  m_Script: {fileID: 11500000, guid: e4986fe3f0815854c873d781bd4c059b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
