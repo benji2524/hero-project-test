@@ -13,6 +13,7 @@ GameObject:
   - component: {fileID: 2855063551212572184}
   - component: {fileID: 1032177405858579076}
   - component: {fileID: 7582871844977087438}
+  - component: {fileID: 5893443441749733095}
   m_Layer: 0
   m_Name: Health Pickup
   m_TagString: Untagged
@@ -120,4 +121,25 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1682882fec8298647b566f45d25ff7dd, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  RotationValue: 100
+  RotationSpeed: 100
+--- !u!95 &5893443441749733095
+Animator:
+  serializedVersion: 5
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4581825768602105119}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 2cdd7614edef7324b968ed8f28d01f60, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorStateOnDisable: 0
+  m_WriteDefaultValuesOnDisable: 0
