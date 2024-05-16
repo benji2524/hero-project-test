@@ -89,7 +89,6 @@ public class PlayerBehavior : MonoBehaviour
     
     if(_isJumping)
     //checks if rumping true and activates jump animation
-    }
     {
  
         _rb.AddForce(Vector3.up * JumpVelocity, ForceMode.Impulse);
@@ -97,4 +96,5 @@ public class PlayerBehavior : MonoBehaviour
         _isJumping = false;
    
         //resets to false so code knows a jump has been completed.
+}
 }
