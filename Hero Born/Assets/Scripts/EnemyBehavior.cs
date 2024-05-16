@@ -16,6 +16,8 @@ public class EnemyBehavior : MonoBehaviour
         
     }
     void OnTriggerEnter(Collider other)
+    
+    //fired when object enters enemy sphere collider radius
  {
 
     if(other.name == "Player")
@@ -25,7 +27,9 @@ public class EnemyBehavior : MonoBehaviour
 }
  
  void OnTriggerExit(Collider other)
- {
+ {  
+    //code occurs when players exit enemy sphere collider radius
+
     if(other.name == "Player")
    {
         Debug.Log("Player out of range, resume patrol");
