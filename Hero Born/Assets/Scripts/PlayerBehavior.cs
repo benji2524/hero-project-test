@@ -20,15 +20,15 @@ public class PlayerBehavior : MonoBehaviour
     //reports true/false depending on player jump
 
     private Rigidbody _rb;
+     
+    //contain a reference to the player capsule’s Rigidbody component
+    
+   
+    
    
     // Start is called before the first frame update
     
-     /*
-    private variable of type Rigidbody that will contain a reference to the capsule’s
-    Rigidbody component
-    
-    */
-    
+
     void Start()
     {
         _rb = GetComponent<Rigidbody>();
@@ -44,21 +44,17 @@ public class PlayerBehavior : MonoBehaviour
     {
     _vInput = Input.GetAxis("Vertical") * MoveSpeed;
     
-    //Movespeed: speed player moves forward or backwards
-    
-    //Input.GetAxis("Vertical") detects when the up arrow, down arrow, W, or S key is pressed and multiplies that value by MoveSpeed
+    //detects when the up arrow, down arrow, W, or S key is pressed
     
      _hInput = Input.GetAxis("Horizontal") * RotateSpeed;
      
-     //Rotatespeed: speed rotates left and right
-    
-    //Input.GetAxis("Horizontal") detects when the left arrow, right arrow, A, or D key is pressed and multiplies that value by RotateSpeed:
+     //detects when the left arrow, right arrow, A, or D key pressed
 
     /*
      this.transform.Translate(Vector3.forward *_vInput *Time.deltaTime);
      this.transform.Rotate(Vector3.up *_hInput *Time.deltaTime);
     */
-    //Comments out the Transform and Rotate method 
+    
     
     _isJumping |= Input.GetKeyDown(KeyCode.J);
    
@@ -74,7 +70,7 @@ public class PlayerBehavior : MonoBehaviour
     //new Vector3 variable stores left and right rotations
 
     Quaternion angleRot = Quaternion.Euler(rotation *Time.fixedDeltaTime);
-    //Quaternion.Euler takes a Vector3 parameter and returns a rotation value in Euler angles
+    //a Vector3 parameter and returns a rotation value in Euler angles
 
     _rb.MovePosition(this.transform.position +  this.transform.forward * _vInput * Time.fixedDeltaTime);
 
@@ -86,15 +82,16 @@ public class PlayerBehavior : MonoBehaviour
     Calls the MoveRotation method on the _rb component, which also takes in a Vector3
     parameter and applies applies force
     */
-    
+     
+     //checks if rumping true and activates jump animation
     if(_isJumping)
-    //checks if rumping true and activates jump animation
     {
  
         _rb.AddForce(Vector3.up * JumpVelocity, ForceMode.Impulse);
     }
+        //resets to false so code knows a jump has been completed.
         _isJumping = false;
    
-        //resets to false so code knows a jump has been completed.
+        
 }
 }
