@@ -6,22 +6,23 @@ public class PlayerBehavior : MonoBehaviour
 {
     public float MoveSpeed = 10f;
     public float RotateSpeed = 75f;
+    //_hinput: stores vertical axis input
      private float _vInput;
      
      //_hinput: stores horizantal axis input
     private float _hInput;
     
-    //_hinput: stores horizantal axis input
+    //holds force applied on jump
     public float JumpVelocity = 5f;
    
-    //holds force applied on jump
+    
     private bool _isJumping;
     
-    //reports true/false depending on player jump
+    
 
     private Rigidbody _rb;
      
-    //contain a reference to the player capsule’s Rigidbody component
+    
     
    
     
@@ -31,10 +32,10 @@ public class PlayerBehavior : MonoBehaviour
 
     void Start()
     {
+         //checks for rigidbody
         _rb = GetComponent<Rigidbody>();
         
-        //GetComponent method checks whether the component type we’re looking for, in this case, Rigidbody, exists on the GameObject the script is attached to and returns it
-
+       
     }
 
     // Update is called once per frame

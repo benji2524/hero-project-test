@@ -7,18 +7,17 @@ public class ItemRotation : MonoBehaviour
   private Transform itemTransform;
     // Start is called before the first frame update
     void Start()
-    {
+    {   
+        //assigns item game object transform component to itemTransform
         itemTransform = this.GetComponent<Transform>();
 
-        //assigns item game object transform component to itemTransform
+        
     }
 
     // Update is called once per frame
     void Update()
-    {
+    {   //items rotate around x-axis
         itemTransform.Rotate(RotationSpeed*Time.deltaTime, 0, 0);
-        //Transform class method takes in three axe; x, y, z
-        // y and z set to 0
-        //rotates around x-axis
+       
     }
 }
