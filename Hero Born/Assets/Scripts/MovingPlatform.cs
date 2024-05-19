@@ -5,7 +5,7 @@ using UnityEngine;
 public class MovingPlatform : MonoBehaviour
 {
     public Vector3 myStartPosition = new Vector3(0, 8, 10);
-    public Vector3 myEndPosition = new Vector3(0, 8, 12);
+    public Vector3 myEndPosition = new Vector3(0, 8, 15);
     public int speed = 10;
     public bool forward = true;
     // Start is called before the first frame update

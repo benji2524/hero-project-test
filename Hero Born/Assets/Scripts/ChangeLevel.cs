@@ -17,10 +17,10 @@ public class ChangeLevel : MonoBehaviour
         
     }
 
-    private void OnTriggerEnter(Collider myCollision)
+   private void OnTriggerEnter(Collider myCollision)
     { 
-    //changes level based on world index going from 0 to 3 
-    SceneManager.LoadScene(buildindex +1);
-       
+         SceneManager.LoadScene(buildindex + 1);
+      
+        
     }
 }
