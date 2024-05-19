@@ -4,11 +4,11 @@ using UnityEngine;
 using UnityEngine.SceneManagement;
 
 public class ChangeLevel : MonoBehaviour
-{
+{   int buildindex;
     // Start is called before the first frame update
     void Start()
     {
-        
+        buildindex = SceneManager.GetActiveScene().buildIndex;
     }
 
     // Update is called once per frame
@@ -19,6 +19,6 @@ public class ChangeLevel : MonoBehaviour
 
     private void OnTriggerEnter(Collider myCollision)
     {
-        SceneManager.LoadScene("World 1-2");
+        SceneManager.LoadScene(buildindex +1);
     }
 }
