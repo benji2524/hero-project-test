@@ -7,7 +7,7 @@ public class ChangeLevel : MonoBehaviour
 {   int buildindex;
     // Start is called before the first frame update
     void Start()
-    {
+    {   //initialized buildindex. sets buildindex equal to scene number
         buildindex = SceneManager.GetActiveScene().buildIndex;
     }
 
@@ -18,7 +18,9 @@ public class ChangeLevel : MonoBehaviour
     }
 
     private void OnTriggerEnter(Collider myCollision)
-    {
-        SceneManager.LoadScene(buildindex +1);
+    { 
+    //changes level based on world index going from 0 to 3 
+    SceneManager.LoadScene(buildindex +1);
+       
     }
 }
